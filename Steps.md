@@ -11,6 +11,35 @@ GitHub actions essentially allowed me to automate the testing of this code (depe
 - It significantly reduced the time it took for me to deliver updates to this application. 
 - Simplified the automation of my workflow. 
 
+## Overview
+
+**GitHub Repository: https://github.com/thecraftman/chainsafedevops**
+
+The name of my Docker Repository is `tolatemitope/chainsafedevops` 
+
+In the repo, you can see the images from the release and push workflow. 
+
+- A new image is published anytime the docker image is created. 
+
+https://hub.docker.com/r/tolatemitope/chainsafedevops/tags
+
+- In the Pull Request view, you can see the team label for each workflow. 
+
+https://github.com/thecraftman/chainsafedevops/pulls
+
+- Also, the unit test are passing when the pull request is created. 
+
+GitHub Actions link: https://github.com/thecraftman/chainsafedevops/actions
+
+- Build workflow: https://github.com/thecraftman/chainsafedevops/actions/workflows/push.yml
+
+- Label workflow: https://github.com/thecraftman/chainsafedevops/actions/workflows/labeler.yml
+
+- Release workflow: https://github.com/thecraftman/chainsafedevops/actions/workflows/release.yml
+
+- Unit-test workflow: https://github.com/thecraftman/chainsafedevops/actions/workflows/test.yml
+
+
 ### GitHub Actions Workflow Roadmap
 
 ![chainsafe drawio](https://user-images.githubusercontent.com/24816990/138957082-83aece7c-adb4-4db8-9919-14bda04b3aa5.png)
@@ -51,3 +80,4 @@ The **DOCKER_USER** and **DOCKER_PASSWORD** environmental variables are stored a
 4. **test.yml:** The test.yml workflow runs unit testing, it gets triggered when a pull request is created. When the configuration occurs, it will run the job within the workflow. The name of the job is `test-unit` 
 
 The strategy matrix allows you to create multiple jobs by performing variable substitution in a single job definition. Im my `test.yml` file i'm using the strategy matrix to create the job for node-version 12.x, 13.x, 14.x, 15.x and 16.x. 
+
