@@ -1,3 +1,13 @@
+/**
+ * application backend
+ * this is a simple application backend with a couple of routes
+ *
+ * don't spend time improving the code of this application since it's not part of the assessment
+ *
+ * 
+ * 
+ */
+
 import supertest from 'supertest';
 import app from '../src/app';
 
