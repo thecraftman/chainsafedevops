@@ -1,0 +1,17 @@
+
+# Add 'backend' label to any change within the 'src' package
+team/backend:
+- src/*
+
+# Add 'test' label to any change in tests
+team/Qa:
+- tests/*
+
+# Add 'docs' label to any change to README.md file. 
+team/docs:
+- README.md
+
+# Add 'DevOps` label to any change to Dockerfile and Taskfile. 
+team/Devops:
+- Dockerfile
+- Taskfile.yml
